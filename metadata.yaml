@@ -1,0 +1,6 @@
+name: mccloud_img1
+desc: 一个从API获取图片的插件，支持自定义API地址。使用 /img1 获取图片。禁止用于非法用途。 
+help: 使用 /img1 获取图片。请在配置中设置正确的API地址。
+version: v1.1 # 插件版本号
+author: 二开1
+repo: https://github.com/MCYUNIDC/mccloud_img1
