@@ -3,14 +3,14 @@ from astrbot.api.event import filter, AstrMessageEvent, MessageEventResult
 from astrbot.api.star import Context, Star, register
 import aiohttp
 
-@register("mccloud_img1", "API获取随机图片二开2", "从API获取随机图片。使用 /img2 获取一张随机图片。", "1.0")
+@register("mccloud_img1", "API获取随机图片二开1", "从API获取随机图片。使用 /img1 获取一张随机图片。", "1.0")
 class SetuPlugin(Star):
     def __init__(self, context: Context, config: dict):
         super().__init__(context)
         self.config = config
         self.api_url = config.get("api_url", "")
 
-    @filter.command("img2")
+    @filter.command("img1")
     async def get_setu(self, event: AstrMessageEvent):
         # 检查是否配置了API URL
         if not self.api_url:
